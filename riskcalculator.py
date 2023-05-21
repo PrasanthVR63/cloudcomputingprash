@@ -3,7 +3,8 @@ import random
 import statistics
 import sys
 
-inputs = sys.argv[1]
+inputs = input()
+#sys.argv[1]
 #stdin.read()
 # Assuming params_json contains the JSON string
 #inputs = event["inputs"]
