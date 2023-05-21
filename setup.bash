@@ -5,3 +5,6 @@ wget https://raw.githubusercontent.com/PrasanthVR63/cloudcomputingprash/0878a890
 apache2ctl restart
 wget https://raw.githubusercontent.com/PrasanthVR63/cloudcomputingprash/main/simpleprint.py -P /var/www/html/
 chmod 755 /var/www/html/simpleprint.py
+a2enmod cgi
+service apache2 restart
+systemctl restart apache2 
