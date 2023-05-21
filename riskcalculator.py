@@ -15,6 +15,7 @@ inputs=sys.stdin.read()
 #inputs = event["inputs"]
 
 params = json.loads(inputs)
+params = params['inputs']
 data = params['data']
 minhistory = params['minhistory']
 shots = params['shots']
