@@ -3,7 +3,7 @@ import random
 import statistics
 import sys
 
-inputs = input() #sys.stdin.read()
+inputs = sys.stdin.read()
 # Assuming params_json contains the JSON string
 #inputs = event["inputs"]
 
