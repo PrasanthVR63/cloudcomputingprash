@@ -4,7 +4,8 @@ import random
 import statistics
 import sys
 
-inputs=input()
+#inputs=input()
+inputs=sys.stdin.read()
 #inputs = sys.argv[1]
 #inputs = ""
 
@@ -58,4 +59,5 @@ for i in range(minhistory, len(data['Buy'])):
         #results.append((data['Date'][i], var95, var99))
         results.append([data['Date'][i], var95, var99])
 print("Content-Type: text/html;charset=utf-8")
+print("")
 print(str(results))
