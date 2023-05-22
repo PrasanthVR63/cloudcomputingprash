@@ -3,9 +3,11 @@ import json
 import random
 import statistics
 import sys
+import ast
 
 #inputs=input()
 inputs=sys.stdin.read()
+params=ast.literal_eval(inputs)
 #inputs = sys.argv[1]
 #inputs = ""
 
@@ -63,3 +65,5 @@ print("Content-Type: text/html;charset=utf-8")
 print("")
 print(str(type(inputs)))
 print(str(inputs))
+print(str(params))
+print(str(type(inputs)))
