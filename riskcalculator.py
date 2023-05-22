@@ -24,7 +24,7 @@ data = params['data']
 minhistory = params['minhistory']
 shots = params['shots']
 buy_sell = params['buy_sell']
-#results = []
+results = []
 
 #for i in range(minhistory, len(data['Buy'])):
 #    if buy_sell == "Buy" and data['Buy'][i] == 1:  # if we're interested in Buy signals
@@ -65,6 +65,6 @@ buy_sell = params['buy_sell']
 #        results.append([data['Date'][i], var95, var99])
 print("Content-Type: text/html;charset=utf-8")
 print("")
-print("----------DATA KEY's VALUE--------------")
-print(str(data))
-print(str(type(data)))
+print("----------MIN HISTORY KEY's VALUE--------------")
+print(str(minhistory))
+print(str(type(minhistory)))
