@@ -7,7 +7,8 @@ import ast
 
 #inputs=input()
 inputs=sys.stdin.read()
-params=ast.literal_eval(inputs)
+paramsliteralinputs=ast.literal_eval(inputs)
+paramsloadedinputs=json.loads(inputs)
 #inputs = sys.argv[1]
 #inputs = ""
 
@@ -63,7 +64,15 @@ params=ast.literal_eval(inputs)
 #        results.append([data['Date'][i], var95, var99])
 print("Content-Type: text/html;charset=utf-8")
 print("")
+print("----------JUST INPUTS--------------")
 print(str(type(inputs)))
 print(str(inputs))
+print("----------JUST INPUTS--------------")
+print("----------LITERAL EVAL INPUTS--------------")
 print(str(params))
-print(str(type(inputs)))
+print(str(type(params)))
+print("-----------LITERAL EVAL INPUTS-------------")
+print("-----------JSON LOADED INPUTS-------------")
+print(str(paramsloadedinputs))
+print(str(type(paramsloadedinputs)))
+print("-----------JSON LOADED INPUTS-------------")
