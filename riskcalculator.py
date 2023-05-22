@@ -3,7 +3,7 @@ import json
 import random
 import statistics
 import sys
-import ast
+#import ast
 
 #inputs=input()
 inputs=sys.stdin.read()
@@ -65,6 +65,6 @@ for i in range(minhistory, len(data['Buy'])):
         results.append([data['Date'][i], var95, var99])
 print("Content-Type: text/html;charset=utf-8")
 print("")
-print("----------MIN HISTORY KEY's VALUE--------------")
+#print("----------MIN HISTORY KEY's VALUE--------------")
 print(str(results))
-print(str(type(results)))
+#print(str(type(results)))
