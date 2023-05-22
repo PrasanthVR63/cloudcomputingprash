@@ -19,6 +19,7 @@ inputs=sys.stdin.read()
 
 params = json.loads(inputs)
 params = params['inputs']
+params = json.loads(params)
 #data = params['data']
 #minhistory = params['minhistory']
 #shots = params['shots']
