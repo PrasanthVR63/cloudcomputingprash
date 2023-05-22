@@ -7,8 +7,8 @@ import ast
 
 #inputs=input()
 inputs=sys.stdin.read()
-paramsliteralinputs=ast.literal_eval(inputs)
-paramsloadedinputs=json.loads(inputs)
+#paramsliteralinputs=ast.literal_eval(inputs)
+#paramsloadedinputs=json.loads(inputs)
 #inputs = sys.argv[1]
 #inputs = ""
 
@@ -17,8 +17,8 @@ paramsloadedinputs=json.loads(inputs)
 # Assuming params_json contains the JSON string
 #inputs = event["inputs"]
 
-#params = json.loads(inputs)
-#params = params['inputs']
+params = json.loads(inputs)
+params = params['inputs']
 #data = params['data']
 #minhistory = params['minhistory']
 #shots = params['shots']
@@ -64,15 +64,5 @@ paramsloadedinputs=json.loads(inputs)
 #        results.append([data['Date'][i], var95, var99])
 print("Content-Type: text/html;charset=utf-8")
 print("")
-print("----------JUST INPUTS--------------")
-print(str(type(inputs)))
-print(str(inputs))
-print("----------JUST INPUTS--------------")
-print("----------LITERAL EVAL INPUTS--------------")
-print(str(paramsliteralinputs))
-print(str(type(paramsliteralinputs)))
-print("-----------LITERAL EVAL INPUTS-------------")
-print("-----------JSON LOADED INPUTS-------------")
-print(str(paramsloadedinputs))
-print(str(type(paramsloadedinputs)))
-print("-----------JSON LOADED INPUTS-------------")
+print("----------JSON LOADED INPUTS AND THEN PARAM['INPUTS']--------------")
+print(params)
