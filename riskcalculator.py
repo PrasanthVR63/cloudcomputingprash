@@ -20,10 +20,10 @@ inputs=sys.stdin.read()
 params = json.loads(inputs)
 params = params['inputs']
 params = json.loads(params)
-#data = params['data']
-#minhistory = params['minhistory']
-#shots = params['shots']
-#buy_sell = params['buy_sell']
+data = params['data']
+minhistory = params['minhistory']
+shots = params['shots']
+buy_sell = params['buy_sell']
 #results = []
 
 #for i in range(minhistory, len(data['Buy'])):
@@ -65,6 +65,6 @@ params = json.loads(params)
 #        results.append([data['Date'][i], var95, var99])
 print("Content-Type: text/html;charset=utf-8")
 print("")
-print("----------JSON LOADED INPUTS AND THEN PARAM['INPUTS']--------------")
-print(str(params))
-print(str(type(params)))
+print("----------DATA KEY's VALUE--------------")
+print(str(data))
+print(str(type(data)))
