@@ -65,4 +65,5 @@ params = params['inputs']
 print("Content-Type: text/html;charset=utf-8")
 print("")
 print("----------JSON LOADED INPUTS AND THEN PARAM['INPUTS']--------------")
-print(params)
+print(str(params))
+print(str(type(params)))
